@@ -2,7 +2,7 @@ import React from "react";
 import { moviesDTO } from "./movies.model";
 import IndividualMovie from "./IndividualMovie";
 import css from "./MoviesList.module.css";
-import GenericList from "./utils/GenericListComponen";
+import GenericList from "../utils/GenericListComponen";
 
 const MoviesList = (props: moviesListProps) => {
   return (

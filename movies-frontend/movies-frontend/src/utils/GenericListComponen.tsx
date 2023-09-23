@@ -1,5 +1,5 @@
 import Loading from "./Loading";
-
+import React from "react";
 export default function GenericList(props: genericListProps) {
   if (!props.list) {
     if (props.loadingUI) {
@@ -7,7 +7,7 @@ export default function GenericList(props: genericListProps) {
     } else {
       return <Loading />;
     }
-  } else if (props.length == 0) {
+  } else if (props.list.length == 0) {
     if (props.emptyListUI) {
       return props.emptyListUI;
     } else {
@@ -20,7 +20,7 @@ export default function GenericList(props: genericListProps) {
 
 interface genericListProps {
   list: any;
-  loadingUI?: ReactElement;
-  emptyListUI?: ReactElement;
-  children?: ReactElement;
+  loadingUI?: React.ReactElement;
+  emptyListUI?: React.ReactElement;
+  children?: React.ReactElement;
 }
