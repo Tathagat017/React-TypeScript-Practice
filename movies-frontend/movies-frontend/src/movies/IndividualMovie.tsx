@@ -1,4 +1,3 @@
-import React from "react";
 import { moviesDTO } from "./movies.model";
 import css from "./IndividualMovie.model.css";
 const IndividualMovie = ({ id, title, poster }: moviesDTO) => {

@@ -1,4 +1,3 @@
-import React from "react";
 import { moviesDTO } from "./movies.model";
 import IndividualMovie from "./IndividualMovie";
 import css from "./MoviesList.module.css";
