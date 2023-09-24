@@ -7,6 +7,9 @@ import IndexMovieTheaters from "../MovieTheaters/IndexMovieTheaters";
 import CreateActors from "../actors/CreateActor";
 import EditActors from "../actors/EditActors";
 import IndexActors from "../actors/IndexActors";
+import CreateMovie from "../movies/CreateMovie";
+import EditMovie from "../movies/EditMovie";
+import FilterMovies from "../movies/FilterMovies";
 import LandingPage from "../movies/LandingPage";
 
 export const routes = [
@@ -14,7 +17,7 @@ export const routes = [
 
   { path: "/genres", component: IndexGenres, exact: true },
   { path: "/genre/create", component: CreateGenre, exact: true },
-  { path: "/genre/edit", component: EditGenre, exact: true },
+  { path: "/genre/edit/:id(//d+)", component: EditGenre, exact: true },
 
   { path: "/actors", component: IndexActors, exact: true },
   { path: "/actors/create", component: CreateActors, exact: true },
@@ -23,4 +26,8 @@ export const routes = [
   { path: "/movietheaters", component: IndexMovieTheaters, exact: true },
   { path: "/movietheaters/create", component: CreateMovieTheater, exact: true },
   { path: "/movietheaters/edit", component: EditMovieTheater, exact: true },
+
+  { path: "/movies/filter", component: FilterMovies, exact: true },
+  { path: "/movies/create", component: CreateMovie, exact: true },
+  { path: "/movies/edit", component: EditMovie, exact: true },
 ];
