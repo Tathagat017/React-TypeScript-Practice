@@ -1,7 +1,7 @@
 const CreateMovie = () => {
   return (
     <>
-      <h3>Create Actors</h3>
+      <h3>Create Movies</h3>
     </>
   );
 };
